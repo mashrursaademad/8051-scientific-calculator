@@ -1,6 +1,6 @@
 # 8051 Microcontroller-Based Scientific Calculator
 
-An assembly-language-based scientific calculator developed using the **8051 microcontroller architecture**, featuring arithmetic expression evaluation, operator precedence handling, prime-number checking, GCD/LCM calculation, and an interactive keypad–LCD interface.
+An assembly-language-based scientific calculator developed using the **8051 microcontroller architecture**, featuring arithmetic expression evaluation, operator precedence handling, prime-number checking, GCD/LCM calculation and an interactive keypad-LCD interface.
 
 The project integrates low-level microcontroller programming, algorithmic expression processing, and hardware interfacing through Proteus simulation.
 
