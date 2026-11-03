@@ -162,51 +162,9 @@ The assembly implementation includes separate routines for:
 
 ## 5. System Architecture and Working Principle
 
-The calculator operates through a sequence of input acquisition, expression processing, numerical computation, and result display.
+The overall workflow of the calculator, including arithmetic expression evaluation and dedicated mathematical functions, is illustrated below.
 
-The general system workflow is:
-
-```text
-              Start / Reset
-                    |
-                    v
-         Initialize Microcontroller
-             and LCD Interface
-                    |
-                    v
-             Scan Keypad and
-             Function Buttons
-                    |
-                    v
-           Identify User Input
-                    |
-          +---------+---------+
-          |                   |
-          v                   v
-   Arithmetic Input      Special Function
-          |                   |
-          v                   v
-   Store Expression      Prime / GCD-LCM
-     in Internal RAM        Processing
-          |                   |
-          v                   |
-   Infix-to-Postfix           |
-      Conversion              |
-          |                   |
-          v                   |
-   Postfix Evaluation         |
-          |                   |
-          +---------+---------+
-                    |
-                    v
-            Format Result
-                    |
-                    v
-             Display on LCD
-                    |
-                    v
-            Wait for Reset
-```
+![8051 Scientific Calculator System Flowchart](results/figures/system_flowchart.png)
 
 ### 5.1 Input Acquisition
 
@@ -403,11 +361,7 @@ The principal functions include:
 - GCD and LCM calculation
 - LCD-based result presentation
 
-### 10.1 System Workflow
-
-![8051 Calculator System Flowchart](results/figures/system_flowchart.png)
-
-### 10.2 Hardware Implementation
+### 10.1 Hardware Implementation
 
 ![8051 Calculator Hardware Implementation](results/figures/hardware_implementation.png)
 
@@ -509,7 +463,7 @@ After modifying the source, assemble it using a compatible 8051 assembler, gener
 │   └── Calculator_v1.1.pdsprj
 │
 ├── documentation/
-│   └── EEE4706_Project_Report.pdf
+│   └── 8051_Calculator_Project_Report.pdf
 │
 └── results/
     └── figures/
@@ -522,7 +476,7 @@ After modifying the source, assemble it using a compatible 8051 assembler, gener
 
 The complete academic project report is available below:
 
-[8051 Scientific Calculator — Project Report (PDF)](documentation/EEE4706_Project_Report.pdf)
+[8051 Scientific Calculator — Project Report (PDF)](documentation/8051_Calculator_Project_Report.pdf)
 
 The report contains the project background, circuit design, algorithm descriptions, implementation details, and supporting results.
 
@@ -569,7 +523,9 @@ Actual hardware operation may require additional validation of timing, electrica
 This project was developed as a group academic project for:
 
 **Course:** EEE 4706 - Microcontroller Based System Design Lab
+
 **Institution:** Islamic University of Technology (IUT)  
+
 **Date of Submission:** April 20, 2026
 
 **Team Members:**
@@ -580,7 +536,7 @@ This project was developed as a group academic project for:
 - Ahmed Awil Mohamoud
 - Bello Aminu Ado
 
-Refer to the accompanying project report for the complete contributor list and academic details.
+Refer to the accompanying project report for the complete contributions and academic details.
 
 ### 16.2 Individual Contribution
 
