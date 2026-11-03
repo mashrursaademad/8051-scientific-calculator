@@ -1,0 +1,12 @@
+# Proteus temporary and backup files
+*.pdsprj.*
+*.bak
+*.tmp
+*.log
+*.workspace
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
